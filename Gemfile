@@ -16,6 +16,7 @@ gem "therubyracer"
 gem "less-rails"
 gem "figaro"
 gem 'unicorn'
+gem 'vcr'
 
 group :development, :test do
   gem 'byebug'
