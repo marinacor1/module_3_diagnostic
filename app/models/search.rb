@@ -6,7 +6,7 @@ class Search < OpenStruct
   end
 
   def all(zip)
-    service.fuel_hash
+    service.fuel_hash(zip)
   end
 
 end
