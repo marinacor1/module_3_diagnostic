@@ -1,10 +1,9 @@
 class NrelService
-  attr_reader: connection
 
   def initialize(user)
     @user = user
-    @connection = Faraday.new(url: "lsdjfldsj")
-    @connection.headers(jsdlfjsldjf)
+    @connection = Faraday.new(url: "https://api.data.gov/nrel/")
+    @connection.headers['X-Api-Key'] = @user.api_key
   end
 
   def parse(response)
