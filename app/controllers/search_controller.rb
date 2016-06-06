@@ -1,6 +1,6 @@
 class SearchController < ApplicationController
   def index
-    zipcode = params["q"]
-    #TODO how do I get the search params to be in the url?
+    search = Search.new(current_user)
+    @stations = search.all(params["q"])
   end
 end
