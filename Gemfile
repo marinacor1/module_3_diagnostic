@@ -17,6 +17,7 @@ gem "less-rails"
 gem "figaro"
 gem 'unicorn'
 gem 'vcr'
+gem 'faraday'
 
 group :development, :test do
   gem 'byebug'

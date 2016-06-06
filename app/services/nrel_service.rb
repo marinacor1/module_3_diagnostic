@@ -10,8 +10,8 @@ class NrelService
     JSON.parse(response.body, symbolize_names: true)
   end
 
-  def get_user
-
+  def get_all_fuel_stations_limited
+    @connection.get "https://api.data.gov/nrel/alt-fuel-stations/v1.json?limit=1&api_key=#{ENV["#{NREL_KEY}"]}"
   end
 
   def get_fuel_stations
