@@ -5,8 +5,7 @@ RSpec.feature "user can search fuel by zip code" do
     user = User.create(name: "Marina", api_key: ENV["NREL_KEY"])
 
     visit root_path
-
-    fill_in "Search", with: "80203"
+    fill_in "Search by zip...", with: "80203"
 
     click_on "Locate"
 
